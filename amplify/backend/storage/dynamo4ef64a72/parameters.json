@@ -1,0 +1,5 @@
+{
+    "tableName": "dynamo4ef64a72",
+    "partitionKeyName": "latitude",
+    "partitionKeyType": "N"
+}

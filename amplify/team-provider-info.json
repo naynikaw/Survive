@@ -1,0 +1,19 @@
+{
+    "android": {
+        "awscloudformation": {
+            "AuthRoleName": "survive-android-20190504201052-authRole",
+            "UnauthRoleArn": "arn:aws:iam::894262061973:role/survive-android-20190504201052-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::894262061973:role/survive-android-20190504201052-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "survive-android-20190504201052-deployment",
+            "UnauthRoleName": "survive-android-20190504201052-unauthRole",
+            "StackName": "survive-android-20190504201052",
+            "StackId": "arn:aws:cloudformation:ap-south-1:894262061973:stack/survive-android-20190504201052/9fc2ccc0-6e7a-11e9-b805-0290269e02d4"
+        },
+        "categories": {
+            "auth": {
+                "cognitof7bff1da": {}
+            }
+        }
+    }
+}

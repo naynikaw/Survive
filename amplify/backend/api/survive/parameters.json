@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "survive",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitof7bff1da",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
