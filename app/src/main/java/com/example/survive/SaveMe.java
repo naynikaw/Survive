@@ -50,7 +50,9 @@ public class SaveMe extends AppCompatActivity {
 
         final MediaPlayer alarm = MediaPlayer.create(this,R.raw.alarm_clock_samsung);
 
-        Button ringButton = (Button)this.findViewById(R.id.ringButton);
+
+
+        Button ringButton = (Button) findViewById(R.id.ringButton);
         ringButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

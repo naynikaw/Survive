@@ -21,8 +21,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DrawerLayout dl;
-    private ActionBarDrawerToggle abdt;
+
 
 
     SwipeButton swipe_me;
@@ -30,12 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        dl = (DrawerLayout)findViewById(R.id.dl);
-        abdt = new ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
-        abdt.setDrawerIndicatorEnabled(true);
 
-        dl.addDrawerListener(abdt);
-        abdt.syncState();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -49,26 +43,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        NavigationView nav_view = (NavigationView)findViewById(R.id.nav_view);
-        nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                int id = menuItem.getItemId();
 
-                if (id==R.id.adminview){
-                    Intent i = new Intent(getApplicationContext(), Mapped.class);
-                    startActivity(i);
-                }
-                return true;
-            }
-        });
-
-    }
-    @Override
-
-    public boolean onOptionsItemSelected(MenuItem item){
-        return abdt.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
 
     }
 
-}
+
+
+    }
